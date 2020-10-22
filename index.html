@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Formulario Remington</title>
+    </head>
+<body>
+    <img src="/XTJ5ddbQ - copia.jpeg" alt="NewLibrary Logo" class="logo-uni">
+    <form action="#" target="" method="get" name="formDatosPersonales">
+
+	<label for="nombres">Nombres</label>
+    <input type="text" name="nombres" id="nombres" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð,.'-]{2,48}"placeholder="Nombres y Apellidos" autofocus required/>
+
+    <label for="codigo" >Estatura</label>
+    <input type="number" step="0.01" name="estatura" id="codigo" placeholder="ingresa  tu estatura" required/>
+
+    <label for="telefono">Salario</label>
+	<input type ="number" step="0.01" name="telofono" id="salario" placeholder="Salario"  required/>
+	<label for="díasTrabajados">Días Trabajados</label>
+	<input type ="number" step="0.01" name="telofono" id="diasLabor" placeholder="Cantidad días trabjados"  required/>
+    <label for="email" />Email</label>
+	<input type="email" name="email" id="email" placeholder="Email" required />
+    <label for="asunto">Fecha</label>
+    <input type ="date" name="asunto" id="asunto" placeholder="Asunto"/>
+    <p>Seleccione su lengueja de programación favorito</p>
+    <select id="dropdown" name="role" class="form-control" required>
+          <option disable selected value>Seleccione una opción</option>
+          <option value="Java">Java</option>
+          <option value="challenges">C++</option>
+          <option value="projects">Python</option>
+          <option value="comunity">Ruby</option>
+          <option value="open-source">C#</option>
+          <option value="other">Otras</option>
+        </select><br>
+    <label>Sexo<input class="input-radio" type="radio"value="maybe"name="user-recomend">F</label>
+    <label> <input class="input-radio" type="radio"value="not-sure"name="user-recomend">M</label>
+    <p>Calcular Salario</p>
+  
+    <div id="resultado">  </div>
+    <button type="button" class="play-buttons1" id="btn-newgame" >Calcular </button>
+    </div>
+    <input type="submit" name="enviar" value="Enviar datos"/> 
+    
+</form>
+
+<script src="/form.js"></script>
+</body>
+</html>
